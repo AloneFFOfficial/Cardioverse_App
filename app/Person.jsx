@@ -42,8 +42,8 @@ const styles = StyleSheet.create({
     color: '#000',
   },
   logo: {
-    width: 150,
-    height: 50,
+    width: 241,
+    height: 222,
     resizeMode: 'contain',
     marginVertical: 10,
   },
@@ -64,8 +64,9 @@ const styles = StyleSheet.create({
     color: '#000',
   },
   button: {
+    display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: '#fff',
     paddingVertical: 12,
     paddingHorizontal: 20,
@@ -83,6 +84,7 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
   buttonText: {
+    textAlign: 'right',
     fontSize: 16,
     fontWeight: 'bold',
     color: '#000',

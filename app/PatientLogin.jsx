@@ -12,7 +12,7 @@ export default function PatientLogin() {
         <Text style={styles.font16}>password</Text>
         <TextInput placeholder='Password' type='password' style={styles.TextInput}> </TextInput>
         <Button title='Sign In' />
-        <Text>Already have a Account?</Text> <Button title='Log In' onPress={Natigate}/>
+        <Text>Already have a Account?</Text> <Button title='Log In' onPress={() => {}}/>
     </View>
   )
 }

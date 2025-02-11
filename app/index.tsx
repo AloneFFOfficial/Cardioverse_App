@@ -1,7 +1,17 @@
 import { View, Text, Animated, Image, StyleSheet} from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
+import { useRouter } from 'expo-router';
 
 export default function index() {
+  const router = useRouter();
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      router.push('/Person');
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <View style={styles.view}>
      <Text style={styles.font36}>Welcome To</Text>

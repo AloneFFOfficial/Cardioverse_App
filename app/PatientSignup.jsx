@@ -1,0 +1,46 @@
+import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { TextInput } from 'react-native';
+import { Button } from 'react-native';
+
+export default function PatientLogin() {
+    const Navigate = () => {
+      console.log('Navigating to Login');
+    }
+  return (
+    <View>
+      <Text>Create a Account</Text>
+      <Text style={styles.font16}>name</Text>
+      <TextInput placeholder='Name' type='username' style={styles.TextInput}> </TextInput>
+      <Text style={styles.font16}>Email</Text>
+      <TextInput placeholder='Email' type='username' style={styles.TextInput}> </TextInput>
+      <Text style={styles.font16}>password</Text>
+      <TextInput placeholder='Password' type='password' style={styles.TextInput}> </TextInput>
+      <Button title='Sign Up' />
+      <Text>Already have a Account?</Text> <Button title='Log In' onPress={Natigate}/>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+    view: {
+      flex:1, 
+      justifyContent:'center', 
+      alignItems:'center', 
+      backgroundColor:'#FFDFD9'
+    },
+    TextInput: {
+      backgroundColor: 'white',
+      padding: 10,
+      width: 200,
+      height: 40,
+      marginBottom: 10,
+      color: 'black',
+    },
+    font16:{
+      fontSize: 16
+    },
+    font36:{
+      fontSize: 36
+    }
+});
